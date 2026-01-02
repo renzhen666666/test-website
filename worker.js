@@ -72,7 +72,7 @@ export default {
         const fileExtension = fileName.lastIndexOf('.') !== -1 ? 
           fileName.substring(fileName.lastIndexOf('.')) : '.bin';
         const filename = 'file-' + timestamp + '-' + randomId + fileExtension;
-        const fileUrl = `https://etan.fun/uploads/${filename}`;
+        const fileUrl = `https://tool.etan.fun/uploads/${filename}`;
         
         const response = {
           message: '文件上传成功',
