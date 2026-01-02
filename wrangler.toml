@@ -1,5 +1,5 @@
 name = "test-website"
 main = "./worker.js"
-compatibility_date = "2026-1-1"
+compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 
