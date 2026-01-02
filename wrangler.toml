@@ -1,4 +1,5 @@
-name = "debug-website"
+name = "test-website"
 main = "./worker.js"
-compatibility_date = "2023-12-01"
+compatibility_date = "2026-1-1"
+compatibility_flags = ["nodejs_compat"]
 

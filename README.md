@@ -47,10 +47,12 @@ zone_id = "your-zone-id"
 wrangler deploy
 ```
 
+注意：在Workers环境中，文件上传功能会返回一个虚拟的URL，因为Workers本身不提供持久化文件存储。如果需要真正的文件存储，您可能需要集成R2存储服务。
+
 ## 项目结构
 
 - `server.js` - Node.js服务器实现（适用于本地开发和传统部署）
-- `worker.js` - Cloudflare Workers兼容入口文件
+- `worker.js` - Cloudflare Workers兼容入口文件（重构以适应Workers环境）
 - `wrangler.toml` - Workers部署配置文件
 - `public/error/` - 静态错误页面
 - `uploads/` - 本地文件上传目录（仅适用于Node.js版本）
